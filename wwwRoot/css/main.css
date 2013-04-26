@@ -15,12 +15,7 @@ button,
 input,
 select,
 textarea {
-	color: #222;
-}
-
-body {
-	font-size: 1em;
-	line-height: 1.4;
+	color: #2d2d2d;
 }
 
 /*
@@ -93,20 +88,208 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+	background: #fff url(../img/bg_GreenBars_YellowGradient.jpg) repeat-x left top;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+header,
+section.body,
+footer
+{
+	display: block;
+	margin: 0 auto 15px auto;
+	padding: 0 84px;
+	position: relative;
+	width: 823px;
+}
+
+a,
+a:visited
+{
+	color: #004025;
+}
 
 
+/** Header **/
+
+header.main {
+	background: url(../img/bg_sunburst.jpg) no-repeat right top;
+	height: 119px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+header.main .logo {
+	background: url(../img/bg_logo.jpg) no-repeat left top;
+	height: 119px;
+	margin: 0;
+	padding: 0;
+	width: 132px;
+}
+
+header.main .searchBar {
+	bottom: 89px;
+	position: absolute;
+	right: 84px;
+}
+header.main .searchBar .inp_Search,
+header.main .searchBar .btn_Search
+{
+	border: 2px solid #00653a;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	font-size: 11px;
+	font-size: 1.1rem;
+	float: left;
+}
+header.main .searchBar .inp_Search {
+	border-right: none;
+	border-bottom-right-radius: 0;
+	-moz-border-bottom-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	-moz-border-top-right-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	height: 17px;
+	padding-left: 6px;
+	width: 170px;
+}
+header.main .searchBar .btn_Search	{
+	background: #00653a;
+	border-left: none;
+	border-bottom-left-radius: 0;
+	-moz-border-bottom-left-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	-moz-border-top-left-radius: 0;
+	-webkit-border-top-left-radius: 0;
+	color: #fff;
+	height: 23px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+header.main nav.main {
+	position: absolute;
+	right: 84px;
+	top: 61px;
+}
+header.main nav.main a {
+	background: url(../img/spr_mainNav.jpg) no-repeat;
+	display: block;
+	float: left;
+	height: 58px;
+}
+header.main nav.main a.home				{ background-position: 0      0; width: 75px; }
+header.main nav.main a.home:hover		{ background-position: 0      -58px; }
+header.main nav.main a.about			{ background-position: -75px  0; width: 80px; }
+header.main nav.main a.about:hover		{ background-position: -75px  -58px; }
+header.main nav.main a.news				{ background-position: -155px 0; width: 71px; }
+header.main nav.main a.news:hover		{ background-position: -155px -58px; }
+header.main nav.main a.contact			{ background-position: -226px 0; width: 92px; }
+header.main nav.main a.contact:hover	{ background-position: -226px -58px; }
 
 
+/** Body **/
+
+section.body .col						{ float: left; margin-right: 20px; }
+section.body .oneCol					{ width: 373px; }
+section.body .twoCol					{ width: 596px; }
+section.body .sideBar.left				{  }
+section.body .sideBar.right				{ float: right; margin-right: 0; }
+section.body ul li.prettyBullets,
+section.body ul li.prettyBullets		{ list-style: none; }
+section.body ul li.prettyBullets span	{ color: #00a45e; font-size: 22px; font-size: 2.2rem; line-height: 0.2; position: relative; top: 4px; }
+
+section.body .bordered {
+	background: #fff;
+	border: 2px solid #00653a;
+	border-radius: 13px;
+	-moz-border-radius: 13px;
+	-webkit-border-radius: 13px;
+	display: block;
+	overflow: hidden;
+}
+
+section.body header {
+	background: none;
+	height: 173px;
+	padding: 0;
+	width: 821px;
+}
+
+section.body h2 {
+	background: #00653a;
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1;
+	margin: 0;
+	padding: 12px 0 12px 10px;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+section.body h3 {
+	color: #004025;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+section.body h4 {
+	color: #00653a;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+section.body .sideBar {
+	font-size: 11px;
+	font-size: 1.1rem;
+	width: 199px;
+}
+
+section.body .bodyNav {
+	background: #00a45e;
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1;
+	padding: 5px 0 7px 10px;
+	margin: 0;
+	width: 100%;
+}
+section.body .bodyNav a {
+	color: #fff;
+	margin: 0 10px 0 0;
+	padding: 0;
+}
+section.body .bodyNav a:visited { color: #fff; }
+
+section.body .content {
+	padding: 10px 20px;
+}
+
+section.body .content ul {
+	margin-left: 4px;
+	padding: 0;
+}
 
 
+/** Footer **/
 
+footer {
+	text-align: center;
+}
 
-
-
-
-
-
-
+footer p {
+	color: #004025;
+}
 
 
 /* ==========================================================================
