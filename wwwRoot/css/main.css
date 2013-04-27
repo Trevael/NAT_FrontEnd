@@ -217,10 +217,44 @@ section.body .bordered {
 
 section.body header {
 	background: none;
-	height: 173px;
+	height: 171px;
 	padding: 0;
-	width: 821px;
+	width: 819px;
 }
+section.body .carouselImages {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+section.body .carouselImages a {
+	background-color: #00a45e;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border: none;
+	display: block;
+	float: left;
+	height: 171px;
+	position: relative;
+	width: 819px;
+}
+section.body header a.haybalum { background-image: url(../img/img_haybalum.jpg); }
+section.body header a.windumus { background-image: url(../img/img_windumus.jpg); }
+section.body header a.buggamil { background-image: url(../img/img_buggamil.jpg); }
+
+section.body .carousel .dots {
+	bottom: 12px;
+	position: absolute;
+	right: 574px;
+}
+section.body .carousel .dots .dot {
+	background: url(../img/spr_currentSlide.gif) no-repeat left top;
+	float: left;
+	height: 10px;
+	margin: 0 6px 0 0;
+	width: 11px;
+}
+section.body .carousel .dots .dot.on { background-position: 0px -10px; }
 
 section.body h2 {
 	background: #00653a;
