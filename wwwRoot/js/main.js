@@ -64,5 +64,4 @@ $(document).ready(function(){
 	prettyBullets();
 	setupCarousel();
 	animateCarousel();
-//	$('#carouselImages').sippysImageSlider({animateDots:true});
 });
