@@ -62,6 +62,8 @@ function animateCarousel(){
 
 $(document).ready(function(){
 	prettyBullets();
-	setupCarousel();
-	animateCarousel();
+	if( $('#carouselImages').length > 0 ){
+		setupCarousel();
+		animateCarousel();
+	}
 });
